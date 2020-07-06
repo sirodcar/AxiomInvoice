@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.760,C:\Users\PTS\Documents\Soft\INV\GRINV.groupproj=C:\Users\PTS\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Develop\Invoice\src\AxiomInvoice.dproj"/>
+	</Default.Personality>
+</BorlandProject>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{23EB9DE8-E6F0-424C-BFB3-BE2DEA4A9E69}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AxiomInvoice.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MST\PSMT.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AxiomInvoice">
+        <MSBuild Projects="AxiomInvoice.dproj"/>
+    </Target>
+    <Target Name="AxiomInvoice:Clean">
+        <MSBuild Projects="AxiomInvoice.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AxiomInvoice:Make">
+        <MSBuild Projects="AxiomInvoice.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PSMT">
+        <MSBuild Projects="MST\PSMT.dproj"/>
+    </Target>
+    <Target Name="PSMT:Clean">
+        <MSBuild Projects="MST\PSMT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PSMT:Make">
+        <MSBuild Projects="MST\PSMT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AxiomInvoice;PSMT"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AxiomInvoice:Clean;PSMT:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AxiomInvoice:Make;PSMT:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

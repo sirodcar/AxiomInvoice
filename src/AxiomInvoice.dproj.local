@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.771,C:\Users\PTS\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\INV.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.900,=C:\Users\PTS\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.617,C:\Users\PTS\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\PTS\Documents\Soft\INV\PINV.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.002,C:\Users\PTS\Documents\Soft\INV\CURRANCY.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.303,C:\Users\PTS\Documents\Soft\INV\BASE.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.769,C:\Develop\Inv\src\AxiomInvoice.dproj=C:\Develop\Inv\src\PINV.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.902,C:\Users\PTS\Documents\Soft\INV\TAX.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.397,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.459,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,C:\Users\PTS\Documents\Soft\INV\LITEMS.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.303,C:\Users\PTS\Documents\Soft\INV\BASE.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,C:\Users\PTS\Documents\Soft\INV\LINV.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.840,C:\Users\PTS\Documents\Soft\INV\CUSTEDIT.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.751,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\INVOICE.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.061,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\EITEMS.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.063,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\ITEMS.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,C:\Users\PTS\Documents\Soft\INV\LINV.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.771,C:\Users\PTS\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\INV.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.840,C:\Users\PTS\Documents\Soft\INV\CUSTEDIT.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.816,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\DM.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.518,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\BASEGR.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,C:\Users\PTS\Documents\Soft\INV\LITEMS.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.697,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\UNITS.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.329,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\CATEGORY.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.528,C:\Users\PTS\Documents\Soft\INV\Unit1.dfm=C:\Users\PTS\Documents\Soft\INV\MSTINV.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.751,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\INVOICE.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.298,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.142,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.329,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\CATEGORY.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.940,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.393,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.574,C:\Users\PTS\Documents\Soft\INV\ECOMPANY.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.002,C:\Users\PTS\Documents\Soft\INV\CURRANCY.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.902,C:\Users\PTS\Documents\Soft\INV\TAX.dfm=C:\Users\PTS\Documents\Soft\INV\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.421,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.816,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\DM.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.574,C:\Users\PTS\Documents\Soft\INV\ECOMPANY.pas=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.697,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\UNITS.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.202,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.093,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.877,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.996,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.715,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.593,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.830,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.528,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\MSTINV.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.063,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\ITEMS.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.518,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\BASEGR.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.061,C:\Users\PTS\Documents\Soft\INV\Unit1.pas=C:\Users\PTS\Documents\Soft\INV\EITEMS.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.067,=C:\Users\PTS\Documents\Soft\INV\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
