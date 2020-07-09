@@ -163,6 +163,7 @@ type
     procedure DtlTAXCODEChange(Sender: TField);
     procedure DtlPRICEChange(Sender: TField);
     procedure btnInvoicesClick(Sender: TObject);
+    procedure pmDelClick(Sender: TObject);
   private
     { Private declarations }
     procedure RefreshDs;
@@ -551,6 +552,13 @@ begin
   Mst.FieldByName('TOTAL').AsFloat :=Mst.FieldByName('Subtotal').AsFloat+Mst.FieldByName('Tax').AsFloat-Mst.FieldByName('DISCOUNT').AsFloat;
 end;
 
+procedure TfrmINV.pmDelClick(Sender: TObject);
+begin
+  if dbINV.DataController.DataSetRecordCount > 0 then
+  begin
+    Dtl.delete;
+  end;
+end;
 procedure TfrmINV.pmNewClick(Sender: TObject);
 begin
   if dbINV.DataController.DataSetRecordCount = 0 then
