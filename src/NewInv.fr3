@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41705.9119937384" ReportOptions.Description.Text="" ReportOptions.LastChange="44021.5124490972" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxdsCo" DataSetName="frxdbco"/>
+    <item DataSet="dbCustomer" DataSetName="frxdCust"/>
+    <item DataSet="dbDetail" DataSetName="frxDDtl"/>
+    <item DataSet="dbHeader" DataSetName="frxDHdr"/>
+  </Datasets>
+  <Styles>
+    <item Name="Title" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0"/>
+    <item Name="Header" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15"/>
+    <item Name="Data" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15"/>
+    <item Name="Footer" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15"/>
+  </Styles>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="2.5" RightMargin="2.5" TopMargin="10" BottomMargin="2.5" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="529.1342" Left="0" Top="468.66172" Width="774.80365" Child="Child1"/>
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Height="173.85838" Left="0" ParentFont="False" Top="18.89765" Width="774.80365"/>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="19.67718" Left="0" Top="427.08689" Width="774.80365" ColumnWidth="0" ColumnGap="0" DataSet="dbDetail" DataSetName="frxDDtl" RowCount="0">
+      <TfrxMemoView Name="frxDDtlDESC" AllowVectorExport="True" Left="237.88992" Top="0" Width="226.7718" Height="18.89765" DataField="DESC" DataSet="dbDetail" DataSetName="frxDDtl" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxDDtl.&#34;DESC&#34;]"/>
+      <TfrxMemoView Name="frxDDtlQTY" AllowVectorExport="True" Left="472.44125" Top="0" Width="45.35436" Height="18.89765" DataField="QTY" DataSet="dbDetail" DataSetName="frxDDtl" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxDDtl.&#34;QTY&#34;]"/>
+      <TfrxMemoView Name="frxDDtlPRICE" AllowVectorExport="True" Left="529.1342" Top="0" Width="113.3859" Height="18.89765" DataField="PRICE" DataSet="dbDetail" DataSetName="frxDDtl" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDDtl.&#34;PRICE&#34;]"/>
+      <TfrxMemoView Name="frxDDtlLINETOTAL" AllowVectorExport="True" Left="647.94527" Top="0" Width="120.94496" Height="18.89765" DataField="LINETOTAL" DataSet="dbDetail" DataSetName="frxDDtl" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDDtl.&#34;LINETOTAL&#34;]"/>
+      <TfrxMemoView Name="Line" AllowVectorExport="True" Left="0" Top="0" Width="37.7953" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[Line]"/>
+      <TfrxMemoView Name="frxDDtlBARCODE" IndexTag="1" AllowVectorExport="True" Left="41.57483" Top="0" Width="166.29932" Height="18.89765" DataField="BARCODE" DataSet="dbDetail" DataSetName="frxDDtl" Frame.Typ="0" Text="[frxDDtl.&#34;BARCODE&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Height="109.60637" Left="0" ParentFont="False" Top="215.43321" Width="774.80365">
+      <TfrxMemoView Name="frxDHdrINVDATE" AllowVectorExport="True" Left="444.11843" Top="25.13389" Width="158.74026" Height="18.89765" DataField="INVDATE" DataSet="dbHeader" DataSetName="frxDHdr" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxDHdr.&#34;INVDATE&#34;]"/>
+    </TfrxPageHeader>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18.89765" Left="0" Top="385.51206" Width="774.80365"/>
+    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="107.92919" Left="0" Top="1020.4731" Width="774.80365" ToNRows="0" ToNRowsMode="rmCount">
+      <TfrxMemoView Name="frxDHdrSUBTOTAL" AllowVectorExport="True" Left="566.9295" Top="5.10235" Width="188.9765" Height="18.89765" DataField="SUBTOTAL" DataSet="dbHeader" DataSetName="frxDHdr" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDHdr.&#34;SUBTOTAL&#34;]"/>
+      <TfrxMemoView Name="frxDHdrTAX" AllowVectorExport="True" Left="566.9295" Top="36.45671" Width="188.9765" Height="18.89765" DataField="TAX" DataSet="dbHeader" DataSetName="frxDHdr" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDHdr.&#34;TAX&#34;]"/>
+      <TfrxMemoView Name="frxDHdrTOTAL" AllowVectorExport="True" Left="566.9295" Top="75.5905511811024" Width="188.9765" Height="18.89765" DataField="TOTAL" DataSet="dbHeader" DataSetName="frxDHdr" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDHdr.&#34;TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="522.8976378" Top="38.13389" Width="94.48825" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="VAT"/>
+    </TfrxChild>
+  </TfrxReportPage>
+</TfrxReport>

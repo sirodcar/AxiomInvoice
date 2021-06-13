@@ -901,9 +901,17 @@ object frmINV: TfrmINV
     ReportOptions.LastChange = 44021.584558356480000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
+      'procedure frxDHdrTOTALOnAfterData(Sender: TfrxComponent);'
+      'begin '
+      
+        '  Memo3.Text := MyFunc ( VarToStr(frxDHdrTOTAL.Value));     //Va' +
+        'rToStr(frxDHdrTOTAL.Text                                      '
+      'end;'
+      ''
       'begin'
       ''
       'end.')
+    OnUserFunction = frxInvUserFunction
     Left = 32
     Top = 352
     Datasets = <
@@ -1254,6 +1262,7 @@ object frmINV: TfrmINV
           Top = 75.590551181102360000
           Width = 188.976500000000000000
           Height = 18.897650000000000000
+          OnAfterData = 'frxDHdrTOTALOnAfterData'
           DataField = 'TOTAL'
           DataSet = dbHeader
           DataSetName = 'frxDHdr'
@@ -1284,6 +1293,35 @@ object frmINV: TfrmINV
           Frame.Typ = []
           Memo.UTF8W = (
             'VAT')
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          AllowVectorExport = True
+          Top = 26.456710000000000000
+          Width = 559.370440000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          ParentFont = False
+        end
+        object Memo4: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 3.779530000000000000
+          Width = 559.370440000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'In Words')
           ParentFont = False
         end
       end

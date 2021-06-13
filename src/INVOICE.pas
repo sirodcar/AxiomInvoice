@@ -164,6 +164,10 @@ type
     procedure DtlPRICEChange(Sender: TField);
     procedure btnInvoicesClick(Sender: TObject);
     procedure pmDelClick(Sender: TObject);
+    function  MyFunc(s: String): String;
+    function frxInvUserFunction(const MethodName: string;
+      var Params: Variant): Variant;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     procedure RefreshDs;
@@ -189,7 +193,7 @@ implementation
 
 {$R *.dfm}
 
-uses DM, TAX, LITEMS, CURRANCY, LINV;
+uses DM, TAX, LITEMS, CURRANCY, LINV, CurrToWords ;
 
 var
   vLastID: Integer;
@@ -437,26 +441,33 @@ end;
 
 procedure TfrmINV.btnInvoicesClick(Sender: TObject);
 begin
-    Application.CreateForm(TfrmListINV,frmListINV);
-    if frmListINV.ShowModal=mrOk then
+  Application.CreateForm(TfrmListINV,frmListINV);
+  if frmListINV.ShowModal=mrOk then
+  begin
+    with Mst do
     begin
-      with Mst do
-      begin
-        Close;
-        SQL.Clear;
-        SQL.Text :='SELECT * FROM H_INV WHERE INVNO=:no ORDER BY ID DESC LIMIT 1 ';
-        ParamByName('no').AsString :=frmListINV.Master.FieldByName('INVNO').AsString;
-        Open;
-      end;
-      with DTL do
-      begin
-        Close;
-        SQL.Clear;
-        SQL.Text :='SELECT * FROM D_INV WHERE IDHEADER=:p';
-        ParamByName('p').AsInteger :=Mst.FieldByName('ID').AsInteger;
-        Open;
-      end;
+      Close;
+      SQL.Clear;
+      SQL.Text :='SELECT * FROM H_INV WHERE INVNO=:no ORDER BY ID DESC LIMIT 1 ';
+      ParamByName('no').AsString :=frmListINV.Master.FieldByName('INVNO').AsString;
+      Open;
     end;
+    with DTL do
+    begin
+      Close;
+      SQL.Clear;
+      SQL.Text :='SELECT * FROM D_INV WHERE IDHEADER=:p';
+      ParamByName('p').AsInteger :=Mst.FieldByName('ID').AsInteger;
+      Open;
+    end;
+  end;
+end;
+
+procedure TfrmINV.FormCreate(Sender: TObject);
+begin
+  frxInv.AddFunction('function MyFunc(s: String):String',
+'My functions',
+                      ' MyFunc function always returns True');
 end;
 
 procedure TfrmINV.FormShow(Sender: TObject);
@@ -465,6 +476,13 @@ begin
   RefreshDs;
   if not Mst.IsEmpty then
      CheckEmptyRecord;
+end;
+
+function TfrmINV.frxInvUserFunction(const MethodName: string;
+  var Params: Variant): Variant;
+begin
+  if MethodName = 'MYFUNC' then
+    Result := MyFunc(Params[0])
 end;
 
 function TfrmINV.GetGrandTotal: Double;
@@ -552,6 +570,12 @@ begin
   Mst.FieldByName('TOTAL').AsFloat :=Mst.FieldByName('Subtotal').AsFloat+Mst.FieldByName('Tax').AsFloat-Mst.FieldByName('DISCOUNT').AsFloat;
 end;
 
+function TfrmINV.MyFunc(s: String): String;
+begin
+  s := CurrToStrF(StrToCurr(s), ffFixed , 2);
+  Result := CurrencyToWord(s) ;
+end;
+
 procedure TfrmINV.pmDelClick(Sender: TObject);
 begin
   if dbINV.DataController.DataSetRecordCount > 0 then
@@ -559,6 +583,7 @@ begin
     Dtl.delete;
   end;
 end;
+
 procedure TfrmINV.pmNewClick(Sender: TObject);
 begin
   if dbINV.DataController.DataSetRecordCount = 0 then

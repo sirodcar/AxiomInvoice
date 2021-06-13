@@ -17,7 +17,8 @@ uses
   LITEMS in 'LITEMS.pas' {frmLookupItems},
   TAX in 'TAX.pas' {frmTax},
   CURRANCY in 'CURRANCY.pas' {frmCurr},
-  LINV in 'LINV.pas' {frmListINV};
+  LINV in 'LINV.pas' {frmListINV},
+  CurrToWords in 'CurrToWords.pas';
 
 {$R *.res}
 

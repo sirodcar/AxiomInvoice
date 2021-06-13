@@ -9,7 +9,6 @@ object Data: TData
   end
   object DTCon: TUniConnection
     ProviderName = 'SQLite'
-    Database = 'C:\Develop\Inv\Bin\pos.db'
     LoginPrompt = False
     Left = 48
     Top = 56
